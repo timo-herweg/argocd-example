@@ -16,10 +16,14 @@ spec:
     targetRevision: grafana-5.6.12
     helm:
       parameters:
-        - name: datasources.datasources.yaml.datasources.name[0]
-          value: Prometheus
-        - name: datasources.datasources.yaml.datasources.type[0]
-          value: prometheus
-        - name: datasources.datasources.yaml.datasources.url[0]
-          value: http://prometheus-server:80
+        - name: datasources
+          value: : |-
+          datasources.yaml:
+            apiVersion: 1
+            datasources:
+            - name: Prometheus
+              type: prometheus
+              url: http://prometheus-server:80
+              access: direct
+              isDefault: true
   project: my-project
