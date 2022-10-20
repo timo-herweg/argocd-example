@@ -16,6 +16,12 @@ spec:
     targetRevision: grafana-5.6.12
     helm:
       parameters:
-        - name: initChownData.image.pullPolicy
-          value: Always
+        - name: datasources.name[0]
+          value: Prometheus
+        - name: datasources.type[0]
+          value: prometheus
+        - name: datasources.access[0]
+          value: direct
+        - name: datasources.url[0]
+          value: http://prometheus-server:80
   project: my-project
