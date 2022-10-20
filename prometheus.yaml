@@ -6,7 +6,12 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
   source:
     path: charts/prometheus
     repoURL: https://github.com/prometheus-community/helm-charts
-    targetRevision: tags/prometheus-15.16.1
+    targetRevision: prometheus-15.16.1
+  project: my-project  
