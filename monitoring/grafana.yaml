@@ -15,8 +15,17 @@ spec:
     repoURL: 'https://github.com/grafana/helm-charts'
     targetRevision: grafana-5.6.12
     helm:
-      valueFiles:
-      - values.yaml
-      values: |-
-            grafana-values.yaml
+      parameters:
+        - name: datasources.datasources.yaml.apiVersion
+          value: 1
+        - name: datasources.datasources.yaml.datasources.name[0]
+          value: Prometheus
+        - name: datasources.datasources.yaml.datasources.type[0]
+          value: prometheus
+        - name: datasources.datasources.yaml.datasources.url[0]
+          value: http://prometheus-server:80
+        - name: datasources.datasources.yaml.datasources.access[0]
+          value: direct
+        - name: datasources.datasources.yaml.datasources.isDefault[0]
+          value: true
   project: my-project
