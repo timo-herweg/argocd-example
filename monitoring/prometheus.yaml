@@ -15,7 +15,7 @@ spec:
     repoURL: https://github.com/prometheus-community/helm-charts
     targetRevision: prometheus-15.16.1
     helm:
-      paramaters:
+      parameters:
         - name: persistentVolume.storageClass
           values: vc01cl01-t0compute
   project: my-project  
