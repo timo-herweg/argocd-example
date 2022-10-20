@@ -24,8 +24,4 @@ spec:
           value: prometheus
         - name: datasources.datasources.yaml.datasources.url[0]
           value: http://prometheus-server:80
-        - name: datasources.datasources.yaml.datasources.access[0]
-          value: direct
-        - name: datasources.datasources.yaml.datasources.isDefault[0]
-          value: 1
   project: my-project
