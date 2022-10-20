@@ -27,5 +27,5 @@ spec:
         - name: datasources.datasources.yaml.datasources.access[0]
           value: direct
         - name: datasources.datasources.yaml.datasources.isDefault[0]
-          value: true
+          value: 1
   project: my-project
