@@ -16,5 +16,7 @@ spec:
     targetRevision: grafana-5.6.12
     helm:
       valueFiles:
-      - grafana-values.yaml
+      - values.yaml
+      values: |-
+            grafana-values.yaml
   project: my-project
