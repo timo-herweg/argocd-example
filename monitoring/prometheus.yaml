@@ -17,5 +17,5 @@ spec:
     helm:
       parameters:
         - name: persistentVolume.storageClass
-          values: vc01cl01-t0compute
+          value: vc01cl01-t0compute
   project: my-project  
