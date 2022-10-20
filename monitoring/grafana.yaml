@@ -16,8 +16,6 @@ spec:
     targetRevision: grafana-5.6.12
     helm:
       parameters:
-        - name: datasources.datasources.yaml.apiVersion
-          value: 1
         - name: datasources.datasources.yaml.datasources.name[0]
           value: Prometheus
         - name: datasources.datasources.yaml.datasources.type[0]
