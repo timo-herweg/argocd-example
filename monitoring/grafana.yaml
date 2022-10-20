@@ -15,9 +15,8 @@ spec:
     repoURL: 'https://github.com/grafana/helm-charts'
     targetRevision: grafana-5.6.12
     helm:
-      parameters:
-        - name: datasources
-          value: : |
+      values: |-
+        datasources:
           datasources.yaml:
             apiVersion: 1
             datasources:
