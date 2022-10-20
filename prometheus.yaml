@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prometheus
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  source:
+    path: charts/prometheus
+    repoURL: https://github.com/prometheus-community/helm-charts
+    targetRevision: tags/prometheus-15.16.1
