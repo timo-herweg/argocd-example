@@ -14,6 +14,13 @@ spec:
       name: '{{cluster}}-monitoring'
     spec:
       project: my-project
+      syncPolicy:
+        automated:
+          prune: false
+          selfHeal: true
+        syncOptions:
+          - ApplyOutOfSyncOnly=true
+          - CreateNamespace=true
       source:
         path: 'monitoring'
         repoURL: 'https://github.com/timo-herweg/argocd-example.git'

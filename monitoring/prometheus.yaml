@@ -20,4 +20,11 @@ spec:
           value: vc01cl01-t0compute
         - name: alertmanager.persistentVolume.storageClass
           value: vc01cl01-t0compute
-  project: my-project  
+  project: my-project 
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+      - CreateNamespace=true

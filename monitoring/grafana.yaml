@@ -26,3 +26,10 @@ spec:
               access: direct
               isDefault: true
   project: my-project
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+      - CreateNamespace=true
