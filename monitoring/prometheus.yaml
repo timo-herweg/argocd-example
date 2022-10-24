@@ -20,7 +20,7 @@ spec:
           value: vc01cl01-t0compute
         - name: alertmanager.persistentVolume.storageClass
           value: vc01cl01-t0compute
-  project: my-project 
+  project: bwi
   syncPolicy:
     automated:
       prune: false

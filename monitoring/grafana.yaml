@@ -25,7 +25,7 @@ spec:
               url: http://prometheus-server:80
               access: direct
               isDefault: true
-  project: my-project
+  project: bwi
   syncPolicy:
     automated:
       prune: false

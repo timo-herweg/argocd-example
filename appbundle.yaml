@@ -13,7 +13,7 @@ spec:
     metadata:
       name: '{{cluster}}-monitoring'
     spec:
-      project: my-project
+      project: bwi
       syncPolicy:
         automated:
           prune: false
