@@ -22,7 +22,7 @@ spec:
           - ApplyOutOfSyncOnly=true
           - CreateNamespace=true
       source:
-        path: 'monitoring'
+        path: 'apps/monitoring'
         repoURL: 'https://github.com/timo-herweg/argocd-example.git'
         targetRevision: HEAD
       destination:
