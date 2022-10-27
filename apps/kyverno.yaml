@@ -17,8 +17,9 @@ spec:
   project: bwi
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true
     syncOptions:
       - ApplyOutOfSyncOnly=true
       - CreateNamespace=true
+      - Replace=true
