@@ -11,7 +11,7 @@ spec:
     namespace: default
     server: 'https://kubernetes.default.svc'
   source:
-    path: charts/kyverno
+    path: charts/kyverno-policies
     repoURL: 'https://github.com/kyverno/kyverno/'
     targetRevision: kyverno-policies-chart-2.6.0
   project: bwi
