@@ -26,5 +26,5 @@ spec:
         repoURL: 'https://github.com/timo-herweg/argocd-example.git'
         targetRevision: HEAD
       destination:
-        server: '{{server}}'
+        server: https://kubernetes.default.svc
         namespace: default
