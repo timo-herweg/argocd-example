@@ -13,7 +13,7 @@ spec:
   source:
     path: charts/kyverno
     repoURL: 'https://github.com/kyverno/kyverno/'
-    targetRevision: v1.8.1
+    targetRevision: kyverno-chart-2.6.1
     helm:
       values: |-
         replicaCount: 3
