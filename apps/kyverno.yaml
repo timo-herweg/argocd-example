@@ -16,7 +16,7 @@ spec:
     targetRevision: v1.8.1
     helm:
       values: |-
-        replicaCount: 1
+        replicaCount: 3
   project: bwi
   syncPolicy:
     automated:
