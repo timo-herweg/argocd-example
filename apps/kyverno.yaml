@@ -14,6 +14,9 @@ spec:
     path: charts/kyverno
     repoURL: 'https://github.com/kyverno/kyverno/'
     targetRevision: v1.8.1
+    helm:
+      values: |-
+        replicaCount: 1
   project: bwi
   syncPolicy:
     automated:
